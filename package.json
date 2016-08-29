@@ -1,7 +1,46 @@
 {
-  "name": "logistics-frontend",
+  "name": "react-redux-starter",
   "version": "0.0.1",
-  "private": true,
+  "author": "hellocode.club",
+  "description": "基于React, Redux的一个前端MVVM开发模式启动项目",
+  "license": "MIT",
+  "keywords": [
+    "node.js",
+    "react",
+    "redux"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hellocode-club/react-redux-starter"
+  },
+  "engines": {
+    "node": "6.3.x"
+  },
+  "contributors": [
+    {
+      "name": "杨景",
+      "email": "yangbajing@gmail.com"
+    }
+  ],
+  "scripts": {
+    "dev": "./node_modules/.bin/webpack --watch --verbose --progress --colors --display-error-details --config webpack/dev.config.js",
+    "build": "./node_modules/.bin/webpack --verbose --progress --colors --display-error-details --config webpack/prod.config.js"
+  },
+  "dependencies": {
+    "antd": "1.10.0",
+    "axios": "0.14.0",
+    "classnames": "2.2.5",
+    "crypto-js": "3.1.6",
+    "immutable": "3.8.1",
+    "react": "15.3.1",
+    "react-css-modules": "3.7.10",
+    "react-dom": "15.3.1",
+    "react-redux": "4.4.5",
+    "react-router": "2.6.1",
+    "react-router-redux": "4.0.5",
+    "redux": "3.5.2",
+    "redux-thunk": "2.1.0"
+  },
   "devDependencies": {
     "babel-core": "6.13.1",
     "babel-loader": "6.2.4",
@@ -28,24 +67,5 @@
     "webpack": "1.13.1",
     "webpack-dev-middleware": "1.6.1",
     "webpack-hot-middleware": "2.12.2"
-  },
-  "dependencies": {
-    "antd": "1.10.0",
-    "axios": "0.14.0",
-    "classnames": "2.2.5",
-    "crypto-js": "3.1.6",
-    "immutable": "3.8.1",
-    "react": "15.3.1",
-    "react-css-modules": "3.7.10",
-    "react-dom": "15.3.1",
-    "react-redux": "4.4.5",
-    "react-router": "2.6.1",
-    "react-router-redux": "4.0.5",
-    "redux": "3.5.2",
-    "redux-thunk": "2.1.0"
-  },
-  "scripts": {
-    "dev": "./node_modules/.bin/webpack --watch --verbose --progress --colors --display-error-details --config webpack/dev.config.js",
-    "build": "./node_modules/.bin/webpack --verbose --progress --colors --display-error-details --config webpack/prod.config.js"
   }
 }
